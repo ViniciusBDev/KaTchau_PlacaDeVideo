@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Audiowide', 'cursive';
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    font-size: 28px ;
+    color: #005cd4;
+    background-color: #db6018;
+    padding: 16px 0 0;
+    border-bottom: 20px solid #005cd4;
+}
+
+.container li {
+    list-style: none;
+    font-size: 20px;
+    font-style: none;
+}
+
+
+.container-flex {
+    margin-top: 50px;
+    margin-bottom: 80px;
+    display: flex;
+    font-size: 1.5em;
+}
+
+.container-flex h2 {
+    color: #005cd4;
+    font-style: italic;
+    border-bottom: 2px solid #db6018;
+}
+
+.container-flex h2 {
+    
+}
+
+.container-flex  p {
+    margin-top: 40px;
+}
+
+.container-flex img {
+    max-width: 50%;
+    margin-right: 24px;
+}
+
+.produtos img {
+    max-width: 100%;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 24.25%);
+}
+
+button {
+    margin-left: 16px;
+    align-items: center;
+    margin: 8px;
+    display: block;
+    width: 80%;
+    padding: 6px 0;
+    border-color: #005cd4;
+    background-color: #db6018;
+    color: #005cd4;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+footer {
+    background-color: #db6018;
+    border-bottom: 15px solid #005cd4;
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+    .container {
+        display: block;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+
+    .produto .container-flex a {
+        display: block;
+        font-size: 1.5em;
+    }
+
+    .produto .container-flex img {
+        margin-right: 0;
+    }
+
+    .produtos {
+        display: block;
+    }
+
+    .produtos .container-flex {
+        margin-bottom: 32px;
+    }
+
+    header div.container {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .container-flex img {
+    max-width: 50%;
+}
+
+    .container-flex a {
+        font-size: 1em;
+    }
+
+    .produtos {
+        grid-template-columns: repeat(2, 49%);
+    }
+}
